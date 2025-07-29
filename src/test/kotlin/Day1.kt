@@ -11,7 +11,7 @@ class Day1 {
         Han hade icke träffat Märta sedan Arvidsons middag, och det hade gått nära en vecka sedan dess. Han hade dagligen promenerat på de gator, där
     """.trimIndent().split("\n")
 
-    private val data = Path("src/test/resources/Day1.txt").readText().trim().split("\n")
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText().trim().split("\n")
 
     private fun calculate(data: List<String>): Int {
         var cost = 0
@@ -22,7 +22,8 @@ class Day1 {
                 s && t -> cost += 13
                 s -> cost += 11
                 t -> cost += 7
-            }}
+            }
+        }
         return cost
     }
 

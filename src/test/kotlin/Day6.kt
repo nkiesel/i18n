@@ -33,10 +33,10 @@ class Day6 {
         ......t..
     """.trimIndent().split("\n")
 
-    private val data = Path("src/test/resources/Day6.txt").readText().split("\n")
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText().split("\n")
 
     private fun calculate(data: List<String>): Int {
-        val words = data.filter { it.isNotEmpty() && it[0] != ' ' && it[0] != '.' }.mapIndexed { i, it ->
+        val words = data.filter { it.isNotBlank() && it[0] != ' ' && it[0] != '.' }.mapIndexed { i, it ->
             var w = it
             if ((i + 1) % 3 == 0) w = String(w.toByteArray(Charsets.ISO_8859_1))
             if ((i + 1) % 5 == 0) w = String(w.toByteArray(Charsets.ISO_8859_1))

@@ -15,7 +15,7 @@ class Day2 {
         2011-02-01T09:15:00-05:00
     """.trimIndent()
 
-    private val data = Path("src/test/resources/Day2.txt").readText()
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText()
 
     @OptIn(ExperimentalTime::class)
     private fun calculate(data: String): String = data.trim()

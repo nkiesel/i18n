@@ -32,7 +32,7 @@ class Day5 {
 //        return ints.indices.map { i -> String(ints, i, 1) }
     }
 
-    private val data = Path("src/test/resources/Day5.txt").readText().split("\n")
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText().split("\n")
 
     @OptIn(ExperimentalTime::class)
     private fun calculate(data: List<String>): Int {

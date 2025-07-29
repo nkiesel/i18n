@@ -15,7 +15,7 @@ class Day3 {
         71äĜ3
     """.trimIndent().trim().split("\n")
 
-    private val data = Path("src/test/resources/Day3.txt").readText().trim().split("\n")
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText().split("\n")
 
     private fun calculate(data: List<String>): Int = data.count { p ->
         p.length in 4..12 &&

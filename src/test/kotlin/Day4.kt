@@ -27,7 +27,7 @@ class Day4 {
         Arrival:   Europe/London                  Mar 08, 2020, 16:52
     """.trimIndent().trim().split("\n")
 
-    private val data = Path("src/test/resources/Day4.txt").readText().trim().split("\n")
+    private val data = Path("src/test/resources/${javaClass.simpleName}.txt").readText().split("\n")
 
     @OptIn(ExperimentalTime::class)
     private fun calculate(data: List<String>): Int {
