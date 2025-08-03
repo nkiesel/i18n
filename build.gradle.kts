@@ -14,6 +14,7 @@ dependencies {
     testImplementation(libs.kotest.assertions.core)
     testImplementation(libs.kotlin.test)
     testImplementation(libs.kotlinx.datetime)
+    testImplementation(libs.jbcrypt)
 }
 
 tasks.test {
