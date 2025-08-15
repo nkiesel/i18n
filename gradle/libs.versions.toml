@@ -1,15 +1,15 @@
 [versions]
+jbcrypt = "6.5.2"
 kotest = "5.9.1"
-kotlin = "2.2.0"
+kotlin = "2.2.10"
 kotlinx-datetime = "0.7.1"
 plugin-versionsUpdate = "1.0.0"
-jbcrypt = "6.5.2"
 
 [libraries]
+jbcrypt = { module = "org.springframework.security:spring-security-crypto", version.ref = "jbcrypt" }
 kotest-assertions-core = { module = "io.kotest:kotest-assertions-core", version.ref = "kotest" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
-jbcrypt = { module = "org.springframework.security:spring-security-crypto", version.ref = "jbcrypt"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
